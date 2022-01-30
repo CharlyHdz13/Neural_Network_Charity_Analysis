@@ -40,4 +40,4 @@ In the following analysis, we want to determine if an applicant for a fund will 
     - We were not able to achieve the target perfomance of 0.75, but still there is lots of improvement to be made on this first model.
     - Three different approaches were made to try to improve the model: increasing number of hidden layers, increasing number of neurons per layer and using a different activation function.
 ## Summary
-
+From all the results we get that at with those specific modifications there is no great improvment in the accuracy of our model. Perhaps some combinations of the three or lookin into how we binned certain features might to the trick. Regardless of that the model is good to have a first impresion of the applicant. Also I would take a look into building a model using Random Forest, due to the fact that our data is tabular and we could have the same accuracy with better performance. 
