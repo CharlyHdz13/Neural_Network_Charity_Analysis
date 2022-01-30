@@ -12,7 +12,32 @@ In the following analysis, we want to determine if an applicant for a fund will 
         - Second layer has 30 neurons, with `Relu` as the activation function
         - Output layer has `Sigmoid` as the activation function
 
-    The reason behind the 80 neurons is because we have a total of 43 features, therefore we are choosing approximately the double of neurons for our first hidden layer. The activation functions for the first and second layer were chosen because this have worked pretty good for classification operations in the past. The output layer uses the `Sigmoid` activation function because we want only to know if the application was succesful or not, we are looking for a binary result, and this function gives us that.
-   
-   
+        The reason behind the 80 neurons is because we have a total of 43 features, therefore we are choosing approximately the double of neurons for our first hidden layer. The activation functions for the first and second layer were chosen because this have worked pretty good for classification operations in the past. The output layer uses the `Sigmoid` activation function because we want only to know if the application was succesful or not, we are looking for a binary result, and this function gives us that.
+        The accuracy of this model was of 0.727 and in the following tests we are looking to improve it.
+    - Test 1: Increasing the number of hidden layers
+        - 3 Hidden layers
+        - First layer has 80 neurons, with `Relu` as the activation function
+        - Second layer has 30 neurons, with `Relu` as the activation function
+        - Third layer has 10 neurons, with `Relu` as the activation function
+        - Output layer has `Sigmoid` as the activation function
+        
+        The accuracy of this model was of 0.725, no improvement.
+    - Test 2: Increasing the number of neurons per layer
+        - 2 Hidden layers
+        - First layer has 130 neurons, with `Relu` as the activation function
+        - Second layer has 65 neurons, with `Relu` as the activation function
+        - Output layer has `Sigmoid` as the activation function
+        
+        The accuracy of this model was of 0.725, no improvement.
+    - Test 3: Using `Tanh` as activation function instead of `Relu`
+        - 2 Hidden layers
+        - First layer has 80 neurons, with `Tanh` as the activation function
+        - Second layer has 30 neurons, with `Tanh` as the activation function
+        - Output layer has `Sigmoid` as the activation function
+        
+        The accuracy of this model was of 0.726, no improvement.
+        
+    - We were not able to achieve the target perfomance of 0.75, but still there is lots of improvement to be made on this first model.
+    - Three different approaches were made to try to improve the model: increasing number of hidden layers, increasing number of neurons per layer and using a different activation function.
 ## Summary
+
